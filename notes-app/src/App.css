@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row select {
+  width: 120px;
+}
+
+.form-row button {
+  flex: 1;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+.search {
+  background: white;
+}
+
+.note {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.note.pinned {
+  border-left: 5px solid #6366f1;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note h3 {
+  margin: 0;
+}
+
+.note p {
+  color: #475569;
+  line-height: 1.5;
+}
+
+.tag {
+  background: #e0e7ff;
+  color: #4338ca;
+  padding: 5px 9px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.pin-button {
+  background: #64748b;
+}
+
+.delete-button {
+  background: #ef4444;
+}
+
+.no-notes {
+  text-align: center;
+  color: #94a3b8;
+}
